@@ -1,0 +1,368 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}
+
+
+
+#MainHeadder{
+    background-image: url(NetFlixBackgroundImage.jpg);
+    opacity: 1;
+   
+
+    overflow: hidden;
+    background-size: cover;
+    backdrop-filter: blur(50px);
+   
+    /* border-bottom: 12px solid rgb(148, 18, 96);
+    border-bottom-left-radius: 100px;: This rounds the bottom-left corner.
+border-bottom-right-radius: 100px;: This rounds the bottom-right corner. */
+  
+}
+
+#ForNetflixLetter{
+    
+margin-right: auto;
+background-color: black;
+height: 60px;
+opacity: 0.4;
+
+}
+
+
+#HeaderDiv1{
+    margin-left: 30px;
+    margin-right: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: space-evenly;
+    
+}
+
+
+
+
+#MidHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 14%;
+ 
+}
+#ForSearchBarAndButtonsSet1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      position: relative;
+ 
+
+}
+
+#input1 {
+    /* width: 100px; */
+    padding: 0 30px;
+    position: relative; 
+    height: 75px;
+    outline: none;
+    line-height: 90px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: 2px solid grey;
+    background: transparent;
+    background-color: rgba(74, 5, 5, 0.202);
+    transition: 0.1s ease;
+    z-index: 1;
+    width: 75%;
+    /* right: 20px; */
+}
+#getStarted{
+    height: 75px;
+    outline: none;
+    /* line-height: 90px; */
+    font-size: .9em;
+    text-align: center;
+}
+
+#LabelLineA {
+    position: absolute;
+    top: 20px; /* Adjust based on the input height */
+
+    font-size:15px;
+    padding: 0 25px;
+    transition: 0.2s ease;
+    pointer-events: none; /* Prevent mouse events on the label */
+    /* left: 46px; */
+}
+
+/* Update this selector to ensure it triggers correctly */
+#input1:focus + #LabelLineA,
+#input1:not(:placeholder-shown) + #LabelLineA {
+
+    transform: translate(-18px, -18px) scale(0.68);
+   
+}
+
+
+
+
+#MidSection{
+
+   
+  background-color: #070611;
+  border-top: 5px solid rgb(148, 18, 96);
+
+}
+
+
+
+
+
+
+#ulMid1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5%;
+
+}
+
+
+@media (max-width: 768px) {
+    #EnclosedCaeds2 #CardsPart2-1 #CardsPart2-2{
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    #EnclosedCaeds2 #A {
+        width: 90%; /* Make cards take up most of the screen width */
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    #EnclosedCaeds2 #CardsPart2-1 {
+        flex-direction: column; /* Stack cards vertically */
+        gap: 1.5rem; /* Adjust gap between the cards */
+    }
+
+    .A {
+        width: 90%; /* Make cards take up most of the screen width */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#A{
+
+background:linear-gradient(#0e0b43,rgb(46, 2, 19));
+border-radius: 25px;
+color: white;
+
+}
+#midSectionCard1{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+
+#ulMid1{
+    list-style: none;
+
+    width: 50%;
+    animation: scroll 180s linear infinite; 
+}
+
+
+#encloseCard1{
+
+    display: flex;
+    align-items: center;
+ 
+    justify-content: center;
+  
+    overflow: hidden;
+}
+
+
+
+
+
+@keyframes scroll{
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+#ulMid1 #liA:hover{
+transform: scale(1.2);
+}
+
+
+#FinalMidsECTION{
+width: 100%;
+
+
+
+}
+
+
+
+#EnclosedCaeds2{
+ width: 80%;
+ display: flex;
+flex-direction: column;
+justify-content: center;
+margin-left: auto;
+margin-right:auto ;
+}
+
+
+#Faqs{
+    overflow: none;
+    height: 45%;
+    overflow: none;
+
+}
+
+
+
+.accordion-button::after {
+  
+    content: '+';
+    font-weight: bold;
+    font-size: 1.5rem;
+    /* color: black; */
+    margin-left: auto;
+    color: #fff;
+   
+
+}
+
+.accordion-button[aria-expanded="true"]::after {
+    content: '-';
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+
+#MainFooter{
+    background-color: #000000;
+    width: 100%;
+
+    
+}
+
+#footerMainDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#footerNav{
+    padding-left: 44px;
+    
+}
+#footerNav2{
+    padding-left: 20%;
+}
+#FfooterUl,#footerUl{
+    text-decoration: underline;
+}
+#MainFooter a{
+    color: #fff;
+}
+.footer-nav {
+    flex: 1; /* Allow the navs to grow and shrink */
+    margin: 0 10px; /* Add some space between navs */
+  }

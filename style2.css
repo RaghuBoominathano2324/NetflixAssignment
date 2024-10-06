@@ -1,0 +1,357 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+  
+    font-size: 0.9rem;
+    box-sizing: border-box;
+
+}
+
+
+.form-continer{
+    background-image:url(NetFlixBackgroundImage.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+    /* padding: 0 20px; */
+}
+.form-col{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+  width: 470px;
+  border: 3px solid black;
+  border-radius: 30px;
+  backdrop-filter: blur(2px);
+  margin-bottom: 20px;
+  /* overflow: hidden; */
+  position: relative;
+}
+
+/* Switch Forms Buttons */
+.btn-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 120%;
+    width: 75%;
+    opacity: 0.6;
+    margin-left: 15%;
+    width: 55%;
+    
+   
+}
+.btn{
+    font-weight: 500;
+    padding: 8px 30px;
+    border: none;
+    border: 3px solid red;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.btn:hover{
+    opacity: 0.68;
+}
+
+.form-box{
+    position: absolute;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 0 30px;
+    transition: 1s;
+    
+}
+
+.form-title{
+    margin: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(84, 16, 16, 0.946);
+}
+#register:hover{
+    background-color: white;
+    color: rgba(163, 195, 18, 0.741);
+    font-weight: 30px;
+}
+#register{
+    border: 2px solid yellow;
+}
+
+#login:hover{
+    background-color: white;
+    color: rgba(163, 195, 18, 0.741);
+    font-weight: 30px;
+}
+
+
+/* login form */
+.login-form{
+    left: 50%;
+    
+    width: 90%;
+   
+}
+/* login inputs */
+.form-inputs{
+    width: 100%;
+}
+
+.input-box{
+    position: relative;
+}
+.inputs{
+    width: 100%;
+    height: 55px;
+    margin: 10px;
+    border: none;
+    /* border-radius: 50px; */
+    background-color: transparent;
+    border: 2px solid rgb(235, 23, 4);
+    outline: none;
+}
+.input-field{
+    font-size: 16px;
+    padding: 0 40px 0 20px;
+    /* background: linear-gradient(rgba(24, 6, 6, 0.776),rgba(100, 68, 7, 0.722)); */
+    backdrop-filter: blur(9px);
+    color: white;
+
+}
+
+#LabelLineB{
+    position: absolute;
+ top: 2%;
+ left: 4%;
+
+
+}
+
+
+
+
+
+
+
+
+
+::placeholder{
+    color: white;
+    font-size: 15px;
+}
+#icon,#iconPass{
+    color: white;
+}
+#icon2{
+    color: white;
+}
+.input-box #icon,#iconPass{
+    position: absolute;
+    top: 45%;
+    left: 350px;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 20px;
+}
+.forget-pass,.rember-me{
+    display: flex;
+    justify-content: right;
+    color: #fff;
+    gap: 5px;
+    text-decoration: none;
+ 
+}
+.forget-pass:hover{
+    text-decoration: underline;
+}
+.submit-btn{
+    background-color: rgba(78, 13, 13, 0.885);
+    color: lightblue;
+    transition: 0.2s;
+}
+.submit-btn:hover{
+    background-color: white;
+    color: black
+}
+/* Register Form */
+.registration-form{
+    left: -670%;
+}
+
+.registration-form .form-title{
+    margin-block: 60px 20px;
+}
+.input-box #icon2{
+    position: absolute;
+    top: 45%;
+    left: 350px;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 20px;
+}
+.input-box2{
+    position: relative;
+}
+
+
+#icon2{
+position: absolute;
+left: 90%;
+top: 29%;
+}
+
+
+#RegistrationForm{
+    width: 90%;
+  
+}
+
+
+
+#loginForm, #RegistrationForm {
+    transition: left 0.3s ease, opacity 0.3s ease;
+}
+
+
+#loginForm {
+    left: 50%;
+    opacity: 1;
+}
+
+#RegistrationForm {
+    left: 50%;
+    opacity: 0;
+    position: absolute; 
+}
+
+#emailIDR{
+    position: relative;
+}
+#LabelLineE{
+    position: absolute;
+    top: 23%;
+    left: 3%;
+}
+#emailIDR:focus + #LabelLineE,
+#emailIDR:not(:placeholder-shown) + #LabelLineA {
+
+    transform: translate(-18px, -18px) scale(0.68);
+    transition: 0.4s;
+   
+}
+
+/*  */
+#LogPasswordR{
+    position: relative;
+}
+#LabelLineP{
+    position: absolute;
+    top: 20%;
+    left: 3%;
+}
+#LogPasswordR:focus + #LabelLineP,
+#LogPasswordR:not(:placeholder-shown) + #LabelLine {
+
+    transform: translate(-19px, -19px) scale(0.68);
+    transition: 0.4s;
+   
+}
+
+#PasswordC{
+    position: relative;
+}
+#LabelLinePC{
+    position: absolute;
+  top: 12%;
+  left: 3%;
+ }
+ #PasswordC:focus + #LabelLinePC,
+ #LogPasswordR:not(:placeholder-shown) + #LabelLinePC {
+ 
+     transform: translate(-19px, -19px) scale(0.68);
+     transition: 0.4s;
+    
+ }
+
+/* Login Form */
+
+#userid{
+    position: relative;
+}
+
+#LabelLineP{
+    position: absolute;
+
+}
+
+#userid:focus + #LabelLineP,
+ #userid:not(:placeholder-shown) + #LabelLinePC {
+ 
+     transform: translate(-19px, -19px) scale(0.68);
+     transition: 0.4s;
+    
+ }
+
+ #LogPassword{
+    position: relative;
+}
+
+#LabelLineP{
+    position: absolute;
+
+}
+
+#LogPassword:focus + #LabelLineP,
+ #userid:not(:placeholder-shown) + #LabelLinePC {
+ 
+     transform: translate(-19px, -19px) scale(0.68);
+     transition: 0.4s;
+    
+ }
+
+
+
+
+
+
+#MainFooter{
+    background-color: #000000;
+    width: 100%;
+
+
+
+    
+}
+
+#footerMainDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#footerNav{
+    padding-left: 44px;
+    
+}
+#footerNav2{
+    padding-left: 20%;
+}
+#FfooterUl,#footerUl{
+    text-decoration: underline;
+}
+#MainFooter a{
+    color: #fff;
+}
+.footer-nav {
+    flex: 1; /* Allow the navs to grow and shrink */
+    margin: 0 10px; /* Add some space between navs */
+  }
